@@ -1,7 +1,14 @@
 * {
-    /* background-color: black;
-    color: white; */
+    background-color: #222222;
+    /* background-image: url("../images/purple.webp"); */
+    background-size: 1550px 800px;
     margin: 0;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.google-sign-in {
+    width: auto;
+    background-color: white;
+    background-image: none;
 }
