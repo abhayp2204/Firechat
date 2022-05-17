@@ -41,7 +41,7 @@ function App() {
         <AuthProvider>
             <Navbar />
             <Container className="d-flex align-items-center justify-content-center">
-                <section className="sign-in">
+                <section className="master">
                     {user? <ChatRoom /> : <SignUpGoogle />}
                 </section>
             </Container>

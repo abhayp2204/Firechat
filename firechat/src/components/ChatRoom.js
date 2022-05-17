@@ -37,9 +37,9 @@ function ChatRoom() {
                 {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
             </div>
 
-            <form onSubmit={sendMessage}>
-                <input value={formValue} onChange={(e) => setFormValue(e.target.value)} />
-                <button type="submit">Send</button>
+            <form className="send" onSubmit={sendMessage}>
+                <input className="send-input" value={formValue} onChange={(e) => setFormValue(e.target.value)} />
+                <button className="send-icon" type="submit">Send</button>
             </form>
 
             <SignOut />

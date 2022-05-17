@@ -1,14 +1,26 @@
 * {
-    background-color: #222222;
-    /* background-image: url("../images/purple.webp"); */
+    background-color: white;
+    /* background-color: #fca311; */
+    background-image: url("../images/purple.webp");
+    background-position: center top;
     background-size: 1550px 800px;
     margin: 0;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
 .google-sign-in {
-    width: auto;
+    width: 100%;
     background-color: white;
     background-image: none;
 }
