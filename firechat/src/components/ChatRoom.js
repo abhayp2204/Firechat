@@ -41,15 +41,7 @@ function ChatRoom() {
                 <input className="send-input" value={formValue} onChange={(e) => setFormValue(e.target.value)} />
                 <button className="send-icon" type="submit">Send</button>
             </form>
-
-            <SignOut />
         </>
-    )
-}
-
-function SignOut() {
-    return auth.currentUser && (
-        <button onClick={() => auth.signOut()}>Sign Out</button>
     )
 }
 

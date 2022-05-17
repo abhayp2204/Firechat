@@ -1,27 +1,22 @@
 .chat-room {
-    background-color: transparent;
     /* background-image: none; */
-    background-position: center top;
-    margin-top: 100px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
 .chat-room :hover{
-    /* background-color: #F8333C; */
+    background-image: none;
+    background-color: #F8333C;
     cursor: pointer;
     font-size: 25px;
     width: 510px;
 }
 
 .chat-msg {
-    /* background-color: black; */
     background-image: none;
-    color: black;
     margin-top: 8px;
     margin-bottom: 8px;
     border: 1px solid black;
@@ -58,8 +53,8 @@
 }
 
 .send {
-    background-color: #F8333C;
-    background-color: #fb8500;
+    background-image: none;
+    background-color: transparent;
     height: 80px;
 
     display: flex;
@@ -69,12 +64,16 @@
 }
 
 .send-input {
+    background-image: none;
     background-color: white;
+    color: black;
     height: 60%;
 }
 
 .send-icon {
-    margin-left: 10px;
+    background-image: none;
     background-color: white;
+
+    margin-left: 10px;
     height: 60%;
 }

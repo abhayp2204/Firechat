@@ -1,13 +1,13 @@
-.navbar h1{
-    position: fixed;
-    margin-top: 80px;
+.navbar {
+    background-color: black;
+}
 
+.navbar h1{
     font-size: 45px;
     background-color: #000000;
-    background-image: none;
     color: white;
 
-    height: 100px;
+    height: 90px;
     width: 100%;
 
     display: flex;
@@ -17,5 +17,12 @@
 
 .navbar :hover{
     cursor: pointer;
-    color: orange;
+    color: #F8333C;
+}
+
+.sign-out {
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 20px;
 }

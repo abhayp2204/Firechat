@@ -6,7 +6,6 @@ import { AuthProvider } from "./contexts/AuthContext"
 
 // Firebase hooks
 import { useAuthState } from "react-firebase-hooks/auth"
-// import { useCollectionData } from "react-firebase-hooks/firestore"
 
 // Bootstrap
 import { Container } from "react-bootstrap"
@@ -15,7 +14,6 @@ import { Container } from "react-bootstrap"
 import Navbar from "./components/Navbar"
 import SignUpGoogle from "./components/SignUpGoogle"
 import ChatRoom from "./components/ChatRoom"
-// import Signup from "./components/Signup"
 
 // CSS
 import "./css/App.css"
@@ -36,14 +34,15 @@ export const firestore = firebase.firestore()
 
 function App() {
     const [user] = useAuthState(auth)
+    console.log(user)
 
     return (
         <AuthProvider>
             <Navbar />
             <Container className="d-flex align-items-center justify-content-center">
-                <section className="master">
+                <div className="master">
                     {user? <ChatRoom /> : <SignUpGoogle />}
-                </section>
+                </div>
             </Container>
         </AuthProvider>
     )
