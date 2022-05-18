@@ -1,8 +1,10 @@
 .navbar {
+    background-image: none;
     background-color: black;
 }
 
 .navbar h1{
+    background-image: none;
     position: fixed;
     top: 0;
 
@@ -23,9 +25,16 @@
     color: #F8333C;
 }
 
+.navbar :hover{
+    cursor: pointer;
+    color: #F8333C;
+}
+
 .sign-out {
+    background-image: none;
     position: fixed;
+    background-color: black;
     color: white;
-    top: 30px;
+    top: 25px;
     right: 20px;
 }
