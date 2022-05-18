@@ -3,8 +3,20 @@
     background-color: black;
 }
 
+.navbar img {
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    
+    position: fixed;
+    left: 592px;
+}
+
+.navbar img :hover {
+    background-color: #F8333C;
+}
+
 .navbar h1{
-    background-image: none;
     position: fixed;
     top: 0;
 

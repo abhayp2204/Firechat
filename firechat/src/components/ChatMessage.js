@@ -1,6 +1,6 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import { auth } from "../App"
+import { auth } from "../firebase"
 import "../css/Chat.css"
 
 function ChatMessage(props) {

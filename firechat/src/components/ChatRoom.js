@@ -7,8 +7,9 @@ import "../css/Send.css"
 import firebase from "firebase/compat/app"
 import "firebase/compat/firestore"
 import "firebase/compat/auth"
-import { auth, firestore } from "../App"
+import { auth, firestore } from "../firebase"
 import { useCollectionData } from "react-firebase-hooks/firestore"
+import { badWords } from "./datasets/badwords"
 
 function ChatRoom() {
     const messagesRef = firestore.collection("messages")
@@ -23,14 +24,19 @@ function ChatRoom() {
 
         const { uid, photoURL } = auth.currentUser
         
+        // No input
         if(!formValue.length) {
             alert("Nothing was typed!")
             return
         }
 
-        
+        // Censor bad words
+        const badWordText = new Array(formValue.length + 1).join("*")
+        const censoredText = badWords.includes(formValue)? badWordText : formValue
+
+        // Add message to firestore
         await messagesRef.add({
-            text: formValue,
+            text: censoredText,
             createdAt: firebase.firestore.FieldValue.serverTimestamp(),
             uid,
             photoURL,
