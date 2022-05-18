@@ -2,11 +2,11 @@
     background-image: none;
     background-color: #F8333C;
 
-    width: 1532px;
+    width: 100%;
     position: fixed;
     bottom: 0px;
     left: 0px;
-    height: 120px;
+    height: 70px;
 
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
 
 .send-input {
     position: fixed;
-    bottom: 40px;
+    bottom: 15px;
     height: auto;
     border-radius: 12px;
     padding-left: 12px;
@@ -27,13 +27,12 @@
 
 .send-icon {
     position: fixed;
-    bottom: 40px;
-    left: 910px;
+    bottom: 15px;
     background-image: none;
     background-color: black;
     color: white;
 
-    margin-left: 10px;
+    margin-left: 380px;
     height: auto;
 }
 
@@ -45,5 +44,5 @@
 .dummy {
     background-image: none;
     background-color: transparent;
-    height: 140px;
+    height: 100px;
 }

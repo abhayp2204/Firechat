@@ -4,16 +4,13 @@
 }
 
 .navbar img {
+    position: fixed;
+    top: 15px;
+
     width: 60px;
     height: 60px;
-    top: 15px;
-    
-    position: fixed;
-    left: 592px;
-}
 
-.navbar img :hover {
-    background-color: #F8333C;
+    margin-left: 39%;
 }
 
 .navbar h1{

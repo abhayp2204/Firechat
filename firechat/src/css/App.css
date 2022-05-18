@@ -9,11 +9,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.wa {
+    position: fixed;
+
+    top: 90px;
+    left: 500px;
+
+    width: 450px;
+    height: 490px;
+}
+
 ::-webkit-scrollbar {
-    width: 0.3vw;
+    width: 0.6vw;
 }
 ::-webkit-scrollbar-thumb{
     background-color: orange;
+    background-color: #F8334C;
+    border-radius: 8px;
 }
 ::-webkit-scrollbar-track {
     background-color: black;

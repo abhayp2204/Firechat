@@ -1,5 +1,4 @@
 import React from "react"
-import { Container } from "react-bootstrap"
 import { auth } from "../firebase"
 import "../css/Chat.css"
 

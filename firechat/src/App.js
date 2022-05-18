@@ -8,10 +8,14 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import Navbar from "./components/Navbar"
 import SignUpGoogle from "./components/SignUpGoogle"
 import ChatRoom from "./components/ChatRoom"
+import Send from "./components/Send"
 
 // CSS
 import { Container } from "react-bootstrap"
 import "./css/App.css"
+
+// Images
+import wa1 from "./images/wa2.png"
 
 function App() {
     const [user] = useAuthState(auth)
@@ -22,7 +26,12 @@ function App() {
             <Navbar />
             <Container className="d-flex align-items-center justify-content-center">
                 <div className="master">
-                    {user? <ChatRoom /> : <SignUpGoogle />}
+                    {user? 
+                    <>
+                        <ChatRoom />
+                        <Send /> 
+                    </>
+                    : <SignUpGoogle />}
                 </div>
             </Container>
         </>
