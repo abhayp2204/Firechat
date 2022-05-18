@@ -4,7 +4,6 @@ import ChatMessage from "./ChatMessage"
 import "../css/Send.css"
 
 // Firebase
-import firebase from "firebase/compat/app"
 import "firebase/compat/firestore"
 import "firebase/compat/auth"
 import { firestore } from "../firebase"

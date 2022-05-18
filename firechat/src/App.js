@@ -14,8 +14,7 @@ import Send from "./components/Send"
 import { Container } from "react-bootstrap"
 import "./css/App.css"
 
-// Images
-import wa1 from "./images/wa2.png"
+// 
 
 function App() {
     const [user] = useAuthState(auth)
