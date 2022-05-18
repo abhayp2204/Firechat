@@ -2,4 +2,4 @@
 
 Real-time chat app using React and Firebase
 
-![not found](./firechat/src/images/ss1.png)
+<img src="./firechat/src/images/ss1.png" alt="Firechat App" width="200" height="200">
