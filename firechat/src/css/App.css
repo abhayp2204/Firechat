@@ -1,7 +1,7 @@
 * {
     background-color: white;
     /* background-color: #fca311; */
-    background-image: linear-gradient(black, #222222, #AA4400);
+    /* background-image: linear-gradient(black,#331111, #AA7700); */
     background-position: center top;
     background-size: 2000px 2000px;
     margin: 0;
@@ -20,6 +20,7 @@
 }
 
 .google-sign-in {
+    background-image: none;
     width: 100%;
     margin-top: 100px;
 }

@@ -3,8 +3,11 @@
 }
 
 .navbar h1{
+    position: fixed;
+    top: 0;
+
     font-size: 45px;
-    background-color: #000000;
+    background-color: black;
     color: white;
 
     height: 90px;
@@ -21,8 +24,8 @@
 }
 
 .sign-out {
+    position: fixed;
     color: white;
-    position: absolute;
     top: 30px;
     right: 20px;
 }
