@@ -8,3 +8,6 @@ Real-time chat app using React and Firebase
 1. Real-time chatting
 2. Reactive and friendly user-interface
 3. Censor profane words
+
+## Bugs
+1. Navbar does not respond well to changing screen width
